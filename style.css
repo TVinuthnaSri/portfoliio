@@ -1,3 +1,17 @@
+:root{
+--bg:white;
+--text:black;
+}
+
+body{
+background:var(--bg);
+color:var(--text);
+}
+
+.dark{
+--bg:#121212;
+--text:white;
+}
 *{
 margin:0;
 padding:0;
