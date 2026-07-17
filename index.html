@@ -1,34 +1,35 @@
-<header>
-<h1>Vinuthna T</h1>
-</header>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="projects.html">Projects</a>
-<a href="contact.html">Contact</a>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To-Do List</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
-<main class="container">
+<body>
 
-<section class="card">
+<div class="container">
 
-<img src="profile.jpg" alt="Vinuthna Profile">
+<h1>To-Do List</h1>
 
-</section>
+<div class="input-area">
+<input type="text" id="taskInput" placeholder="Enter a task">
+<button id="addBtn">Add</button>
+</div>
 
-<section class="card">
+<div class="filters">
+<button onclick="filterTasks('all')">All</button>
+<button onclick="filterTasks('active')">Active</button>
+<button onclick="filterTasks('completed')">Completed</button>
+</div>
 
-<h2>Welcome</h2>
+<ul id="taskList"></ul>
 
-<p>AI & Data Science Student</p>
+</div>
 
-</section>
+<script src="script.js"></script>
 
-</main>
-
-<footer>
-
-Copyright © 2026
-
-</footer>
+</body>
+</html>
